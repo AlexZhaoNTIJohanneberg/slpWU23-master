@@ -1,0 +1,70 @@
+/* ############## Generellt ############## */
+
+body{
+    margin: 0px;
+}
+
+.containers{
+    gap: 5px;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px auto 150px;
+    grid-template-areas: 
+    "hd"
+    "mn"
+    "ft";
+}
+
+header{
+    grid-area: hd;
+    background-color: rgb(73, 116, 168);
+    position: fixed;
+    height: 100px;
+    width: 100vw;
+}
+
+main{
+    grid-area: mn;
+}
+
+footer{
+    grid-area: ft;
+    background-color: rgb(73, 116, 168);
+}
+
+/* ################### Översikt-knappen ################ */
+
+nav{
+    height: 28px;
+    width: 28px;
+}
+
+.overview_button{
+    cursor: pointer;
+    display: inline;
+}
+
+.overview_button i.material-icons{
+    font-size: 2.5rem;
+}
+
+.overview{
+    height: 300px;
+    width: 180px;
+    background: rgb(157, 157, 157);
+    position: fixed;
+    top: 0;
+    right: -50vw;
+    transition: right 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.showoverview{
+    right: 0vw;
+}
+
+.movebutton{
+    right: 50vh;
+}
