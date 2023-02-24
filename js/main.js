@@ -6,10 +6,10 @@ overviewButton.addEventListener("click",showoverview);
 
 function showoverview(){ 
 
-    let overview = document.querySelector("div.overview");
+    let overview = document.querySelector("nav.overview");
     overview.classList.toggle("showoverview");
-    let movebutton = documentquerySelector("nav.overview-button");
-    overview.classList.toggle("movebutton");
+    let movebutton = document.querySelector("div.overview-button");
+    movebutton.classList.toggle("movebutton");
 
 
 };

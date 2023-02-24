@@ -5,11 +5,11 @@ body{
 }
 
 .containers{
-    gap: 5px;
+    gap: 0px;
     height: 200vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px auto 150px;
+    grid-template-rows: 100px auto 150px;
     grid-template-areas: 
     "hd"
     "mn"
@@ -40,10 +40,14 @@ nav{
     width: 28px;
 }
 
-.overview_button{
+.overview-button{
     cursor: pointer;
-    display: inline;
+    position: absolute;
+    top: 0;
+    left: -5vh;
+    transition: 0.3s;
 }
+
 
 .overview_button i.material-icons{
     font-size: 2.5rem;
@@ -55,10 +59,29 @@ nav{
     background: rgb(157, 157, 157);
     position: fixed;
     top: 0;
-    right: -50vw;
+    right: -180px;
     transition: right 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
-    z-index: 10;
+    z-index: 1;
+}
+
+.info{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 280px;
+    padding: 10px;
+}
+
+.sites{
+    background-color: rgb(99, 79, 79);
+    width: 140px;
+    height: 30px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .showoverview{
@@ -66,5 +89,35 @@ nav{
 }
 
 .movebutton{
-    right: 50vh;
+left: 0vw;
 }
+
+/* ############### index ############ */
+
+#indexmain{
+    background-color: ;
+}
+
+#indexA1{
+    background-image: url();
+}
+#indexA2{
+    background-image: url();
+}
+#indexA3{
+    background-image: url();
+}
+
+/* ############### sida2 ############ */
+
+/* ############### sida3 ############ */
+
+/* ############### sida4 ############ */
+
+
+/* ############### Mobil ############ */
+
+
+/* ############### Dator ############ */
+
+
