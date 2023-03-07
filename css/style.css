@@ -2,6 +2,8 @@
 
 body{
     margin: 0px;
+    background-size: cover;
+    background-image: url(../img/pawel-czerwinski-0TwOvuz2_tY-unsplash.jpg);
 }
 
 .containers{
@@ -18,7 +20,7 @@ body{
 
 header{
     grid-area: hd;
-    background-color: rgb(73, 116, 168);
+    background-color: rgb(34, 34, 34);
     position: fixed;
     height: 100px;
     width: 100vw;
@@ -26,11 +28,35 @@ header{
 
 main{
     grid-area: mn;
+    margin: 10px;
 }
 
 footer{
     grid-area: ft;
-    background-color: rgb(73, 116, 168);
+    background-color: rgb(34, 34, 34);
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "ftsn1 ftsn2"
+    "ftsn1 ftsn3";
+
+}
+
+.ftsn1{
+    grid-area: ftsn1;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+.ftsn2{
+    grid-area: ftsn2;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+.ftsn3{
+    grid-area: ftsn3;
 }
 
 /* ################### Översikt-knappen ################ */
@@ -46,6 +72,8 @@ nav{
     top: 0;
     left: -5vh;
     transition: 0.3s;
+    color: white;
+    margin-top: 10px;
 }
 
 
@@ -89,20 +117,43 @@ nav{
 }
 
 .movebutton{
-left: 0vw;
+    left: 0vw;
+}
+
+.logo{
+    background-image: url();
+}
+
+h1{
+    color: rgb(203, 255, 202);
+    font-size: 1.5rem;
+    margin: 10px;
 }
 
 /* ############### index ############ */
 
 #indexmain{
-    background-color: ;
+    background-size: cover;
+    background-image: url(../img/);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #indexA1{
-    background-image: url();
+    height: 200px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/sean-do-EHLd2utEf68-unsplash.jpg);
+    margin: 30px
 }
 #indexA2{
-    background-image: url();
+    height: 200px;
+    width: 300px;
+    background-size: contain;
+    background-image: url(../img/florian-olivo-Mf23RF8xArY-unsplash.jpg);
+    margin: 30px;
 }
 #indexA3{
     background-image: url();
@@ -120,4 +171,53 @@ left: 0vw;
 
 /* ############### Dator ############ */
 
+@media screen and (min-width: 376px){
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .containers{
+        grid-template-rows: 150px auto 250px;
+    }
+    #indexmain{
+        margin: 30px;
+        justify-content: left;
+        flex-direction: row;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+    #indexA1{
+        width: 1000px;
+        height: 500px;
+        background-position-y: 80%;
+        background-size: cover;
+        border-color: rgba(20, 53, 21, 0.744);
+        border-width: 3px;
+        border-style: solid;
+    }
+    #indexA2{
+        width: 600px;
+        height: 400px;
+        background-size: cover;
+        border-color: rgba(20, 53, 21, 0.744);
+        border-width: 3px;
+        border-style: solid;
+    }
+    footer{
+        grid-template-columns: 30% 70% ;
 
+    }
+    .overview{
+        height: 1000px;
+        width: 500px;
+        background: rgb(48, 48, 48);
+        right: -500px;
+
+        box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.848);
+
+    }
+    .showoverview{
+        right: 0px;
+    }
+
+}
