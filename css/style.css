@@ -18,6 +18,12 @@ body{
     "ft";
 }
 
+a{  
+    color: black;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
 header{
     grid-area: hd;
     background-color: rgb(34, 34, 34);
@@ -59,6 +65,16 @@ footer{
     grid-area: ftsn3;
 }
 
+.logo{
+    background-image: url();
+}
+
+h1{
+    color: rgb(203, 255, 202);
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
 /* ################### Översikt-knappen ################ */
 
 nav{
@@ -84,7 +100,7 @@ nav{
 .overview{
     height: 300px;
     width: 180px;
-    background: rgb(157, 157, 157);
+    background: rgb(101, 101, 101);
     position: fixed;
     top: 0;
     right: -180px;
@@ -96,15 +112,16 @@ nav{
 .info{
     display: flex;
     flex-wrap:wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items:center;
     height: 280px;
     padding: 10px;
 }
 
 .sites{
-    background-color: rgb(99, 79, 79);
-    width: 140px;
+    background-color: rgba(203, 255, 202, 0.599);
+    width: 100px;
     height: 30px;
     margin: 10px;
     display: flex;
@@ -118,16 +135,6 @@ nav{
 
 .movebutton{
     left: 0vw;
-}
-
-.logo{
-    background-image: url();
-}
-
-h1{
-    color: rgb(203, 255, 202);
-    font-size: 1.5rem;
-    margin: 10px;
 }
 
 /* ############### index ############ */
@@ -156,10 +163,73 @@ h1{
     margin: 30px;
 }
 #indexA3{
-    background-image: url();
+    height: 450px;
+    width: 400px;
+    background-color: rgba(141, 141, 141, 0.934);
+    margin: 30px;
 }
 
-/* ############### sida2 ############ */
+/* ############### sida2/Teams ############ */
+
+#s2main{
+    display: grid;
+    grid-template-rows: repeat(auto*2);
+}
+
+.teams{
+    margin:auto;
+    background-color: white;
+    width: 300px;
+    height: 420px;
+
+}
+
+#valorant{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.players{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+#player{
+    background-image: url();
+    background-size: contain;
+}
+
+#player{
+    background-image: url();
+    background-size: contain;
+}
+
+#player{
+    background-image: url();
+    background-size: contain;
+}
+
+#player{
+    background-image: url();
+    background-size: contain;
+}
+
+#player{
+    background-image: url();
+    background-size: contain;
+}
+
+#player{
+    background-image: url();
+    background-size: contain;
+}
+
+
 
 /* ############### sida3 ############ */
 
@@ -176,9 +246,36 @@ h1{
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    a{
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
     .containers{
         grid-template-rows: 150px auto 250px;
     }
+
+    .info{
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        height: 700px;
+        padding: 10px;
+    }
+
+    .sites{
+        background-color: rgb(99, 79, 79);
+        width: 400px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     #indexmain{
         margin: 30px;
         justify-content: left;
@@ -187,7 +284,7 @@ h1{
         flex-wrap: wrap;
     }
     #indexA1{
-        width: 1000px;
+        width: 900px;
         height: 500px;
         background-position-y: 80%;
         background-size: cover;
@@ -203,6 +300,16 @@ h1{
         border-width: 3px;
         border-style: solid;
     }
+
+    #indexA3{
+        height: 400px;
+        width: 600px;
+        background-color: rgba(141, 141, 141, 0.934);
+        border-color: rgba(20, 53, 21, 0.744);
+        border-width: 3px;
+        border-style: solid;
+    }
+
     footer{
         grid-template-columns: 30% 70% ;
 
