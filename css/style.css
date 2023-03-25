@@ -75,6 +75,12 @@ h1{
     margin: 10px;
 }
 
+h2{
+    color: white;
+}
+
+
+
 /* ################### Översikt-knappen ################ */
 
 nav{
@@ -127,6 +133,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
 }
 
 .showoverview{
@@ -171,57 +178,73 @@ nav{
 
 /* ############### sida2/Teams ############ */
 
+#container2{
+    height: 300vh;
+}
+
 #s2main{
     display: grid;
     grid-template-rows: repeat(auto*2);
 }
 
-.teams{
-    margin:auto;
-    background-color: white;
-    width: 300px;
-    height: 420px;
+.s2articles{
 
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#valorant{
+.members{
+    background-color: rgb(67, 67, 67);
+    width: 280px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .players{
-    margin: 10px;
+    margin: 20px;
     width: 100px;
-    height: 100px;
+    height: 150px;
     background-color: black;
+    border-color: black;
+    border-width: 0px;
+    border-style: solid;
 }
 
-#player{
-    background-image: url();
-    background-size: contain;
+#player1{
+    background-image: url(../img/Namnlöst-1.jpg);
+    background-size:250%;
+    background-position-x: 45%;
+    background-position-y:50% ;
 }
 
-#player{
-    background-image: url();
-    background-size: contain;
+#player2{
+    background-image: url(../img/Namnlöst-2.jpg);
+    background-size:120%;
+    background-position-x: 50%;
+    background-position-y:0% ;
 }
 
-#player{
-    background-image: url();
-    background-size: contain;
+#player3{
+    background-image: url(../img/Namnlöst-3.jpg);
+    background-size: 200%;
+    background-position-x: 50%;
+    background-position-y: 45%;
 }
 
-#player{
-    background-image: url();
-    background-size: contain;
+#player4{
+    background-image: url(../img/Namnlöst-4.jpg);
+    background-size: 120%;
 }
 
-#player{
-    background-image: url();
-    background-size: contain;
+#player5{
+    background-image: url(../img/Namnlöst-5.jpg);
+    background-size: 160%;
+    background-position-x: 30%;
+    background-position-y: 70%;
 }
 
 #player{
@@ -242,14 +265,19 @@ nav{
 /* ############### Dator ############ */
 
 @media screen and (min-width: 376px){
+    
     body{
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     a{
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-decoration: none;
+    }
+
+    h2{
+        font-size: 3rem;
     }
 
     .containers{
@@ -267,9 +295,9 @@ nav{
     }
 
     .sites{
-        background-color: rgb(99, 79, 79);
-        width: 400px;
-        height: 100px;
+        background-color: rgb(61, 68, 61);
+        width: 350px;
+        height: 90px;
         margin: 10px;
         display: flex;
         align-items: center;
@@ -312,6 +340,7 @@ nav{
 
     footer{
         grid-template-columns: 30% 70% ;
+        height: 250px;
 
     }
     .overview{
@@ -325,6 +354,55 @@ nav{
     }
     .showoverview{
         right: 0px;
+    }
+
+
+    /* ########### sida2 ########### */
+
+    #container2{
+        height: 350vh;
+    }
+
+    .s2articles{
+        margin: 30px;
+        position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #valorant{
+        height: 1260px;
+    }
+
+    #apex{
+        height: 700px;
+    }
+    
+    .members{
+        background-color: rgb(65, 65, 65);
+        width: 1300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .players{
+        height: 500px;
+        width: 300px;
+        margin: 30px;
+    }
+
+    #player1{
+        background-image: url(../img/Namnlöst-1.jpg);
+        background-size:240%;
+        background-position-x: 50%;
+        background-position-y:45% ;
+    }
+
+    #player2{
+        background-position-y: 0%;
     }
 
 }
