@@ -1,9 +1,12 @@
 /* ############## Generellt ############## */
 
+@import url(https://fonts.google.com/specimen/Oxygen?query=oxygen);
+
 body{
     margin: 0px;
     background-size: cover;
     background-image: url(../img/pawel-czerwinski-0TwOvuz2_tY-unsplash.jpg);
+    font-family: 'Oxygen', sans-serif;
 }
 
 .containers{
@@ -18,22 +21,37 @@ body{
     "ft";
 }
 
-a{  
-    color: black;
-    font-size: 1.1rem;
-    text-decoration: none;
-}
-
-p a{
-    color: white;
-}
-
 header{
     grid-area: hd;
-    background-color: rgb(34, 34, 34);
-    position: fixed;
-    height: 100px;
-    width: 100vw;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(../img/Frog_logo2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.name{
+    height: 50px;
+    transition: 0.3s;
+    margin-left: 10px;
+    position:relative ;
+}
+
+.movename{
+    width: 40px;
+    height: 50px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    transition: 0.3s;
 }
 
 main{
@@ -42,6 +60,8 @@ main{
 }
 
 footer{
+    box-shadow: 0px -4px rgba(34, 34, 34, 0.688);
+
     grid-area: ft;
     background-color: rgb(34, 34, 34);
     display: grid;
@@ -104,8 +124,14 @@ footer{
     margin-top: 30px;
 }
 
-.logo{
-    background-image: url();
+a{  
+    color: black;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+p a{
+    color: white;
 }
 
 h1{
@@ -191,6 +217,8 @@ i.material-icons{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 100px;
+    height: 170vh;
 }
 
 #indexA1{
@@ -209,10 +237,15 @@ i.material-icons{
     margin: 30px;
 }
 #indexA3{
-    height: 450px;
-    width: 400px;
-    background-color: rgba(141, 141, 141, 0.934);
+    height: 500px;
+    width: 300px;
+    background-color: rgba(0, 12, 0, 0.278);
     margin: 30px;
+}
+
+#indexA3 p{
+    margin: 20px;
+    color: white;
 }
 
 /* ############### sida2/Teams ############ */
@@ -235,7 +268,8 @@ i.material-icons{
 }
 
 .members{
-    background-color: rgb(67, 67, 67);
+    background-color: rgba(67, 67, 67, 0.742);
+    border-radius: 30px;
     width: 280px;
     display: flex;
     flex-direction: row;
@@ -262,7 +296,6 @@ i.material-icons{
 
 #player2{
     background-image: url(../img/Namnlöst-2.jpg);
-    /* background-repeat: no-repeat; */
     background-size:130%;
     background-position-x: 50%;
     background-position-y:5% ;
@@ -297,21 +330,17 @@ i.material-icons{
 
 /* ############### sida3 ############ */
 
-#mn3{
-    height: 350vh;
+#s3main{
     display: grid;
-    grid-template-rows: repeat(auto*3);
+    height: 350vh;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'sn1'
+    'sn2';
 }
 
-/* #mn3 section{
-    background-color: grey;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    margin:20px;
-} */
-
 #s3sn1{
+    grid-area: sn1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -319,20 +348,111 @@ i.material-icons{
 }
 
 #s3sn2{
+    grid-area: sn2;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items:center;
 }
 
-#mn3 article{
-    width: 110px;
+#s3sn1 article{
+    width: 120px;
     height: 240px;
     margin: 10px;
     background-color: rgba(207, 255, 207, 0.292);
 }
 
+#s3sn2 article{
+    width: 120px;
+    height: 240px;
+    margin: 10px;
+    background-color: rgba(207, 255, 207, 0.292);
+}
+
+#s3a7{
+    background-image: url(../img/flaska.png);
+    background-size: 500%;
+    background-position-x: 71%;
+    background-position-y: 65%;
+}
+
+#s3sn2 #s3a8{
+    background-image: url(../img/keps.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 220%;
+    background-position-x: 52%;
+    background-position-y: 50%;
+
+}
+
 /* ############### sida4 ############ */
+
+#s4main{
+    display: grid;
+    height: 250vh;
+    gap: 5px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    's4sn1 s4sn1 empty1'
+    'empty2 s4sn2 s4sn2'
+    's4sn3 s4sn3 s4sn3';
+}
+
+#empty1{
+    grid-area: empty1;
+}
+#empty2{
+    grid-area: empty2;
+}
+
+.s4sn{
+    background-color: rgba(28, 33, 28, 0.529);
+    margin: 10px;
+    height: fit-content;
+    width: 230px;
+    border-radius: 5px;
+}
+
+#s4sn1{
+    grid-area: s4sn1;
+    margin-top: 50px;
+
+}
+
+#s4sn2{
+    grid-area: s4sn2;
+    margin-left: 100px ;
+}
+
+#s4sn3{
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    grid-area: s4sn3;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.s4sn a{
+    color: white;
+    padding: 10px;
+}
+
+.s4sn p{
+    color: white;
+    width: 200px;
+    padding: 20px;
+    font-family: 'Oxygen', sans-serif;
+    margin: 0px;
+}
+
+
 
 
 /* ################# Dator ################## */
@@ -346,9 +466,32 @@ i.material-icons{
         background-repeat: no-repeat;
     }
 
+    header{
+        padding-left: 100px;
+        padding-top: 10px;
+    }
+
+    .logo{
+        height: 120px;
+        width: 120px;
+        margin-right: 50px;
+    }
+
+    .movename{
+        width: 400px;
+        font-size: 2rem;
+        transition: 0;
+        margin-bottom: 10px;
+    }
+
+
     a{
         font-size: 1.5rem;
         text-decoration: none;
+    }
+
+    h1{
+        font-size: 2rem;
     }
 
     h2{
@@ -443,12 +586,14 @@ i.material-icons{
     }
 
     #indexA3{
-        height: 400px;
+        height: 300px;
         width: 600px;
-        background-color: rgba(141, 141, 141, 0.934);
-        border-color: rgba(20, 53, 21, 0.744);
-        border-width: 3px;
-        border-style: solid;
+        background-color: rgba(0, 12, 0, 0.278);
+    }
+
+    #indexA3 p{
+        color: white;
+        font-size: 1.1rem;
     }
 
     footer{
@@ -456,6 +601,8 @@ i.material-icons{
         height: 250px;
 
     }
+
+
 
 
     /* ########### sida2 ########## */
@@ -519,23 +666,14 @@ i.material-icons{
     /* ########## sida3 ########## */
 
     #body3{
-        background-image: none;
-        background-color: rgb(0, 12, 1);
+        background-repeat: repeat;
     }
 
-    #mn3{
+    #s3main{
         height: 350vh;
         display: grid;
         grid-template-rows: repeat(auto*3);
     }
-    
-    /* #mn3 section{
-        background-color: grey;
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
-        margin:100px;
-    } */
     
     #s3sn1{
         display: flex;
@@ -551,13 +689,46 @@ i.material-icons{
         align-items:center;
     }
     
-    #mn3 article{
+    #s3main article{
         width: 300px;
         height: 500px;
         margin: 40px;
         background-color: rgba(207, 255, 207, 0.292);
     }
-    
 
+    #s3a7{
+        background-size: 455%;
+        background-position-x: 72%;
+    }
+
+    /* ######### sida4 ######## */
+
+    #body4{
+        background-repeat: repeat;
+    }
+
+    #s4main{
+        height: 100vh;
+    }
+
+    .s4sn{
+        width: 800px;
+        margin: 50px;
+    }
+
+    #s4sn2{
+        margin-left: 500px;
+    }
+
+    #s4sn3{
+        background-color: rgba(128, 128, 128, 0.533);
+        margin-left: 200px;
+        margin-top: -150px;
+    }
+
+    .s4sn p{
+        font-size: 1.3rem;
+        width: 750px;
+    }
 
 }
