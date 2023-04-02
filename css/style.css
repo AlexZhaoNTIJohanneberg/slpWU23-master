@@ -120,7 +120,7 @@ footer{
     margin:10px;
 }
 
-#ftinfo3 a{
+#ftsn3 a{
     margin-top: 30px;
 }
 
@@ -130,8 +130,8 @@ a{
     text-decoration: none;
 }
 
-p a{
-    color: white;
+p{
+    font-family: 'JosefinSans', sans-serif;
 }
 
 h1{
@@ -256,7 +256,7 @@ i.material-icons{
 
 #s2main{
     display: grid;
-    grid-template-rows: repeat(auto*2);
+    grid-template-rows: auto auto;
 }
 
 .s2articles{
@@ -448,7 +448,6 @@ i.material-icons{
     color: white;
     width: 200px;
     padding: 20px;
-    font-family: 'Oxygen', sans-serif;
     margin: 0px;
 }
 
@@ -480,7 +479,7 @@ i.material-icons{
     .movename{
         width: 400px;
         font-size: 2rem;
-        transition: 0;
+        transition: none;
         margin-bottom: 10px;
     }
 
@@ -613,7 +612,6 @@ i.material-icons{
 
     .s2articles{
         margin: 30px;
-        position: center;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -672,7 +670,7 @@ i.material-icons{
     #s3main{
         height: 350vh;
         display: grid;
-        grid-template-rows: repeat(auto*3);
+        grid-template-rows: auto auto auto;
     }
     
     #s3sn1{
@@ -721,7 +719,7 @@ i.material-icons{
     }
 
     #s4sn3{
-        background-color: rgba(128, 128, 128, 0.533);
+        background-color: rgba(56, 56, 56, 0.533);
         margin-left: 200px;
         margin-top: -150px;
     }
