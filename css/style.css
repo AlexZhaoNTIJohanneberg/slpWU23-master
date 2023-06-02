@@ -5,7 +5,7 @@
 body{
     margin: 0px;
     background-size: cover;
-    background-image: url(../img/pawel-czerwinski-0TwOvuz2_tY-unsplash.jpg);
+    background-image: url(../img/backgrund.jpg);
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -146,6 +146,7 @@ h2{
 
 
 
+
 /* ################### Översikt-knappen ################ */
 
 nav{
@@ -171,7 +172,7 @@ i.material-icons{
 .overview{
     height: 300px;
     width: 180px;
-    background: rgb(101, 101, 101);
+    background: rgb(28, 28, 28);
     position: fixed;
     top: 0;
     right: -180px;
@@ -191,7 +192,7 @@ i.material-icons{
 }
 
 .sites{
-    background-color: rgba(203, 255, 202, 0.599);
+    background-color: rgba(203, 255, 202);
     width: 100px;
     height: 30px;
     margin: 10px;
@@ -217,24 +218,34 @@ i.material-icons{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px;
-    height: 170vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 200vh;
 }
 
 #indexA1{
-    height: 200px;
-    width: 300px;
+    height: 30%;
+    width: 375px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(../img/sean-do-EHLd2utEf68-unsplash.jpg);
-    margin: 30px
+    background-image: url(../img/gamer\ 1.jpg);
+    background-color: rgba(0, 0, 0, 0.515);
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 #indexA2{
-    height: 200px;
-    width: 300px;
+    height: 18%;
+    width: 375px;
     background-size: contain;
-    background-image: url(../img/florian-olivo-Mf23RF8xArY-unsplash.jpg);
-    margin: 30px;
+    background-repeat: no-repeat;
+    background-image: url(../img/gamer2.jpg);
+    margin-bottom: 30px ;
+    border-bottom: 10px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.515);;
 }
 #indexA3{
     height: 500px;
@@ -281,49 +292,71 @@ i.material-icons{
     margin: 20px;
     width: 95px;
     height: 150px;
-    background-color: black;
+    background-color: rgb(67,67,67);
     border-color: rgb(52, 52, 52);
     border-width: 1px;
     border-style: solid;
 }
 
 #player1{
-    background-image: url(../img/Namnlöst-1.jpg);
-    background-size:250%;
+    background-image: url(../img/Valorant-player1.jpg);
+    background-repeat: no-repeat;
+    background-size:180%;
     background-position-x: 48%;
-    background-position-y:50% ;
+    background-position-y:0% ;
 }
 
 #player2{
-    background-image: url(../img/Namnlöst-2.jpg);
+    background-image: url(../img/Valorant-player2.jpg);
     background-size:130%;
     background-position-x: 50%;
     background-position-y:5% ;
 }
 
 #player3{
-    background-image: url(../img/Namnlöst-3.jpg);
+    background-image: url(../img/Valorant-player3.jpg);
     background-size: 200%;
-    background-position-x: 40%;
-    background-position-y: 38%;
+    background-position-x: 50%;
+    background-position-y: 20%;
 }
 
 #player4{
-    background-image: url(../img/Namnlöst-4.jpg);
+    background-image: url(../img/Valorant-player4.jpg);
     background-size: 120%;
     background-position-x: 20% ;
 }
 
 #player5{
-    background-image: url(../img/Namnlöst-5.jpg);
+    background-image: url(../img/Valorant-player5.jpg);
     background-size: 160%;
-    background-position-x: 35%;
+    background-position-x: 50%;
     background-position-y: 50%;
 }
 
-#player{
-    background-image: url();
-    background-size: contain;
+#player6{
+    background-image: url(../img/Apex-player1.jpg);
+    background-color: rgb(67,67,67);
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-position-x: 30%;
+}
+
+#player7{
+    background-image: url(../img/Apex-player2.jpg);
+    background-color: rgb(67,67,67);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 30%;
+    background-position-y: 100%;
+}
+
+#player8{
+    background-image: url(../img/Apex-player3.jpg);
+    background-color: rgb(67,67,67);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 30%;
+    background-position-y: 100%;
 }
 
 
@@ -332,12 +365,13 @@ i.material-icons{
 
 #s3main{
     display: grid;
-    height: 350vh;
+    height: fit-content;
     grid-template-rows: auto auto;
     grid-template-areas: 
     'sn1'
     'sn2';
 }
+
 
 #s3sn1{
     grid-area: sn1;
@@ -356,41 +390,122 @@ i.material-icons{
 }
 
 #s3sn1 article{
-    width: 120px;
-    height: 240px;
-    margin: 10px;
-    background-color: rgba(207, 255, 207, 0.292);
+    width: 200px;
+    height: 300px;
+    margin: 40px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 #s3sn2 article{
-    width: 120px;
-    height: 240px;
-    margin: 10px;
-    background-color: rgba(207, 255, 207, 0.292);
+    width: 200px;
+    height: 300px;
+    margin: 40px;
+    background-color: white;
+}
+
+
+
+#s3a1{
+    background-image: url(../img/bucket_hat.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-x: 55% ;
+    background-position-y: 40%;
+}
+
+#s3a2{
+    background-image: url(../img/mousepad.jpg);
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position-x: 55% ;
+    background-position-y: 40%;
+}
+
+#s3a3{
+    background-image: url(../img/hoodie_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 55% ;
+    background-position-y: 40%;
+}
+
+#s3a4{
+    background-image: url(../img/windbreaker.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+#s3a5{
+    background-image: url(../img/sweatshirt.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    background-size: 115%;
+}
+
+#s3a6{
+    background-image: url(../img/muggar.jpg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position-x: 47%;
 }
 
 #s3a7{
-    background-image: url(../img/flaska.png);
-    background-size: 500%;
-    background-position-x: 71%;
-    background-position-y: 65%;
+    background-image: url(../img/flaska.jpg);
+    background-size: 150%;
+    background-position-x: 45%;
+    background-position-y: 50%;
 }
 
 #s3sn2 #s3a8{
-    background-image: url(../img/keps.png);
+    background-image: url(../img/keps.jpg);
     background-repeat: no-repeat;
-    background-color: white;
-    background-size: 220%;
-    background-position-x: 52%;
+    background-size: 110%;
+    background-position-x: 30%;
     background-position-y: 50%;
 
+}
+
+#s3a9{
+    background-image: url(../img/bomber_jacket.jpg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position-x: 50%;
+    background-position-y: 40%;
+}
+
+#s3a10{
+    background-image: url(../img/track_pants.jpg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position-x: 70%;
+    background-position-y: 0%;
+}
+
+#s3a11{
+    background-image: url(../img/tracksuit_trousers.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 70%;
+    background-position-y: 0%;
+}
+
+#s3a12{
+    background-image: url(../img/coaster.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 70%;
+    background-position-y: 50%;
 }
 
 /* ############### sida4 ############ */
 
 #s4main{
     display: grid;
-    height: 250vh;
+    height: 220vh;
+
     gap: 5px;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
@@ -403,12 +518,13 @@ i.material-icons{
 #empty1{
     grid-area: empty1;
 }
+
 #empty2{
     grid-area: empty2;
 }
 
 .s4sn{
-    background-color: rgba(28, 33, 28, 0.529);
+    background-color: rgba(0, 0, 0, 0.529);
     margin: 10px;
     height: fit-content;
     width: 230px;
@@ -418,12 +534,12 @@ i.material-icons{
 #s4sn1{
     grid-area: s4sn1;
     margin-top: 50px;
-
+    width: 330px;
 }
 
 #s4sn2{
     grid-area: s4sn2;
-    margin-left: 100px ;
+    width: 330px;
 }
 
 #s4sn3{
@@ -431,12 +547,12 @@ i.material-icons{
     height: 200px;
     width: 200px;
     grid-area: s4sn3;
-    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 15px;
+    margin-left: 80px;
 }
 
 .s4sn a{
@@ -446,7 +562,7 @@ i.material-icons{
 
 .s4sn p{
     color: white;
-    width: 200px;
+    width: 300px;
     padding: 20px;
     margin: 0px;
 }
@@ -518,7 +634,7 @@ i.material-icons{
     .overview{
         height: 500px;
         width: 400px;
-        background: rgb(48, 48, 48);
+        background: rgb(28, 28, 28);
         right: -500px;
         box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.848);
 
@@ -538,7 +654,6 @@ i.material-icons{
     }
 
     .sites{
-        background-color: rgb(61, 68, 61);
         width: 300px;
         height: 70px;
         margin: 10px;
@@ -642,23 +757,25 @@ i.material-icons{
     }
 
     #player1{
-        background-size:240%;
+        background-size:200%;
         background-position-x: 50%;
-        background-position-y:45% ;
+        background-position-y:40% ;
     }
 
     #player2{
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
     #player3{
         background-position-x: 50%;
-        background-position-y: 35%;
+        background-position-y: 0%;
     }
 
     #player5{
         background-position-y: 35%;
+    }
+
+    #player6{
+        background-position-y: 100%;
     }
 
     /* ########## sida3 ########## */
@@ -691,13 +808,27 @@ i.material-icons{
         width: 300px;
         height: 500px;
         margin: 40px;
-        background-color: rgba(207, 255, 207, 0.292);
+        background-color: white
+    }
+
+    #s3a5{
+        background-size: 130%;
+        background-position-y: 90%;
     }
 
     #s3a7{
-        background-size: 455%;
-        background-position-x: 72%;
+        background-size: 150%;
+        background-position-x: 50%;
     }
+
+    #s3a8{
+
+    }
+
+    #s3a9{
+        background-position-y: 35%;
+    }
+
 
     /* ######### sida4 ######## */
 
@@ -714,14 +845,19 @@ i.material-icons{
         margin: 50px;
     }
 
+    #s4sn1{
+        width: fit-content;
+    }
+
     #s4sn2{
-        margin-left: 500px;
+        margin-left: 450px;
+        width: fit-content;
     }
 
     #s4sn3{
         background-color: rgba(56, 56, 56, 0.533);
-        margin-left: 200px;
-        margin-top: -150px;
+        margin-left: 100px;
+        margin-top: -300px;
     }
 
     .s4sn p{
